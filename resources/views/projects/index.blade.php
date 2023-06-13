@@ -39,6 +39,7 @@ Editar
     {{ method_field('DELETE') }}
     <input type="submit" class="btn btn-danger" value="Eliminar">
 </form>
+<a href="{{ route('generar.pdf', $proyecto->id) }}" class="btn btn-primary">Generar PDF</a>
 </td>
     </tr>
     @endforeach

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\PDFController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +13,8 @@ use App\Http\Controllers\ProjectController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+//Route::get('/generar-pdf/{id}', 'PDFController@generarPDF')->name('generar.pdf');
+Route::get('/generar-pdf/{id}' , [PDFController::class,'generarPDF'])->name('generar.pdf');
 Route::get('/', function () {
     return view('welcome');
 });
