@@ -6,8 +6,8 @@
     </style>
 </head>
 <body>
-    <h1>Gobierno de El
-Salvador</h1>
+    <center><h1>Gobierno de El
+Salvador</h1></center>
     
 <h2>Despacho de seguridad nacional</h2>
 

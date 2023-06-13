@@ -15,6 +15,7 @@ use App\Http\Controllers\PDFController;
 */
 //Route::get('/generar-pdf/{id}', 'PDFController@generarPDF')->name('generar.pdf');
 Route::get('/generar-pdf/{id}' , [PDFController::class,'generarPDF'])->name('generar.pdf');
+Route::get('/generar' , [PDFController::class,'generarAllPDF'])->name('generarTodo.pdf');
 Route::get('/', function () {
     return view('welcome');
 });

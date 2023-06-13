@@ -10,6 +10,7 @@
 </div>
 @endif
 <a class="btn btn-primary" href="{{ url('proyecto/create') }}">Registrar Nuevo Proyecto</a>
+<a href="{{ route('generarTodo.pdf') }}" class="btn btn-info">Generar todos los reportes</a>
 <table class="table table-light">
     <thead class="thead-light">
     <tr>
